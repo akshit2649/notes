@@ -13,7 +13,7 @@ const getAllUsers = asyncHandler(async (req, res) => {
   res.json(users);
 });
 
-// @desc Create all users
+// @desc Create a users
 // @route POST /users
 // @access Private
 const createNewUsers = asyncHandler(async (req, res) => {
