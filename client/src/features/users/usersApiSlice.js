@@ -52,7 +52,7 @@ export const usersApiSlice = apiSlice.injectEndpoints({
       query: ({ id }) => ({
         url: "/users",
         method: "DELETE",
-        bodu: { id },
+        body: { id },
       }),
       invalidatesTags: (result, error, arg) => [{ type: "User", id: arg.id }],
     }),
